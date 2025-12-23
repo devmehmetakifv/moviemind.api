@@ -11,13 +11,13 @@ class MovieBase(BaseModel):
     id: int
     slug: str
     title: str
-    year: int
+    year: Optional[int] = None
     decade: str
-    release_date: str
+    release_date: Optional[str] = None
     director: str
     genres: str
     rating: float
-    imdb_url: str
+    imdb_url: Optional[str] = None
     poster_url: str
     description: str
 
