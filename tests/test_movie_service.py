@@ -158,7 +158,7 @@ class TestExplanationGeneration:
     def test_fallback_explanation(self):
         """Test fallback explanation when no specific matches."""
         source = {"genres": "Action", "director": "A", "decade": "1990s", "rating": 5.0}
-        target = {"genres": "Documentary", "director": "B", "decade": "2020s", "rating": 9.0}
+        target = {"genres": "Documentary", "director": "B", "decade": "1990s", "rating": 9.0}
         explanation = _generate_explanation(source, target)
         assert explanation == "Similar characteristics"
 
