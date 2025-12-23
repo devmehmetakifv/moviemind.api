@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     supabase_key: str
     supabase_service_key: str
     jwt_secret: str
-    cors_origins: str = "http://localhost:3000"
+    cors_origins: str = "http://localhost:3000,https://moviemindui-production.up.railway.app"
     
     @property
     def cors_origins_list(self) -> list[str]:
